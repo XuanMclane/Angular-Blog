@@ -1,14 +1,10 @@
-<h1>For loop</h1>
-<h4 *ngFor="let item of data">
-  {{item}}
-</h4>
-<table border="1px">
-  <tr>
-    <td>Name</td>
-    <td>Age</td>
-  </tr>
-  <tr *ngFor="let person of people">
-    <td>{{person.name}}</td>
-    <td>{{person.age}}</td>
-  </tr>
-</table>
+<h1>Simple Form</h1>
+<form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)">
+  <input type="text" ngModel name="user" placeholder="enter user name" />
+  <br><br>
+  <input type="text" ngModel name="age" placeholder="enter user age" />
+  <br><br>
+  <input type="text" ngModel name="address" placeholder="enter user address" />
+  <br><br>
+  <button>Get User Values</button>
+</form>
