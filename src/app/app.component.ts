@@ -39,7 +39,7 @@ const ALERTS: Alert[] = [{
 })
 export class AppComponent {
   title = 'blog';
-  alerts: Alert[];
+  alerts: Alert[] = [];
 
   constructor() {
     this.reset();

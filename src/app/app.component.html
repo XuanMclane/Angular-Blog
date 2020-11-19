@@ -1,14 +1,6 @@
 <app-header></app-header>
-<h1>Add bootstrap</h1>
-<p>
-<ngb-alert [dismissible]="false">
-    <strong>Warning!</strong> Better check yourself, you're not looking too good.
-</ngb-alert>
-</p>
-<p *ngFor="let alert of alerts">
-<ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
-</p>
-<p>
-<button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-</p>
+<h1>Add Material UI</h1>
+<button mat-button color="primary">Angular Material Button</button>
+<mat-slider max="10" min="1"></mat-slider>
+<mat-slider step="4" tickInterval="3"></mat-slider>
 <app-footer></app-footer>
