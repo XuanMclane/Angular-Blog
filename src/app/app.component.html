@@ -1,6 +1,19 @@
-<h1>Property Binding</h1>
-<input type="text" [disabled]="disabledBox" [value]="name" />
-<br><br>
-<input type="text" disabled={{disabledBox}} value={{name}} />
-<br><br>
-<button (click)="enableBox()">Enable TextBox</button>
+<h1>Conditions</h1>
+<!-- <h1 *ngIf="show == 'yes'; then ifBlock else elseBlock">
+</h1>
+<ng-template #ifBlock>
+  <h1>If Block</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1>Else Block</h1>
+</ng-template> -->
+
+<ng-template [ngIf]="show == 'red'">
+ <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show == 'green'">
+  <h1>Green Block</h1>
+ </ng-template>
+ <ng-template [ngIf]="show == 'black'">
+  <h1>Black Block</h1>
+ </ng-template>
