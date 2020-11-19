@@ -1,4 +1,6 @@
 <app-header></app-header>
-<h1>Pass data from parent to child</h1>
-<app-user-list [person]="data"></app-user-list>
+<h1>Resualbe component</h1>
+<div *ngFor="let data of users">
+    <app-user-list [person]="data"></app-user-list>
+</div>
 <app-footer></app-footer>
