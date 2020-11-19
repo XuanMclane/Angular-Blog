@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  myName = 'Bruce'
-  getName(name)
+  myEvent(evt)
   {
-    alert(`My name is ${name}`)
+    alert(evt)
   }
 }

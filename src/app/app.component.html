@@ -1,2 +1,21 @@
-<h1>Call Function</h1>
-<button (click)="getName(myName)">Get my name</button>
+<h1>Event</h1>
+<button (click)="myEvent('This is click event')">Click me</button>
+<br /><br />
+<input type="text" #box1 (keyup)="myEvent(box1.value)" />
+<br /><br />
+<input type="text" #box2 (keydown)="myEvent(box2.value)" />
+<br /><br />
+<input type="text" #box3 (keyup.enter)="myEvent(box3.value)" />
+<br /><br />
+<input type="text" #box4 (blur)="myEvent(box3.value)" />
+<br /><br />
+<h1 
+  (mouseover) = "myEvent('mouse over')"
+  style="background-color: blue;">
+  Mouse event
+</h1>
+<h1 
+  (mouseleave) = "myEvent('mouse leave')"
+  style="background-color: red;">
+  Mouse event
+</h1>
