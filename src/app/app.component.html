@@ -1,7 +1,14 @@
 <app-header></app-header>
-<h1>Style Binding</h1>
-<h1 style="color:red">Heading 1</h1>
-<h1 [style.color]="color">Heading 2</h1>
-<h1 [style.color]="err ? 'red' : 'green'">Conditional Style</h1>
-<button (click)="updateColor()">Update Color</button>
+<h1>Add bootstrap</h1>
+<p>
+<ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
+</p>
+<p *ngFor="let alert of alerts">
+<ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<p>
+<button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+</p>
 <app-footer></app-footer>
