@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  color = "dddd"
+  data = ['Sam', 'Peter', 'Bruce', 'David']
+  people = [
+    { name: 'Sam', age: 20},
+    { name: 'Tony', age: 21},
+    { name: 'Peter', age: 22},
+    { name: 'Bruce', age: 23}
+  ]
 }
