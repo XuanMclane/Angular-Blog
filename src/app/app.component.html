@@ -1,19 +1,18 @@
-<h1>Conditions</h1>
-<!-- <h1 *ngIf="show == 'yes'; then ifBlock else elseBlock">
-</h1>
-<ng-template #ifBlock>
-  <h1>If Block</h1>
-</ng-template>
-<ng-template #elseBlock>
-  <h1>Else Block</h1>
-</ng-template> -->
-
-<ng-template [ngIf]="show == 'red'">
- <h1>Red Block</h1>
-</ng-template>
-<ng-template [ngIf]="show == 'green'">
-  <h1>Green Block</h1>
- </ng-template>
- <ng-template [ngIf]="show == 'black'">
-  <h1>Black Block</h1>
- </ng-template>
+<h1>Switch Case</h1>
+<div [ngSwitch]="color">
+  <h2 style="color:red" *ngSwitchCase="'red'">
+    Red Color
+  </h2>
+  <h2 style="color:green" *ngSwitchCase="'green'">
+    Green Color
+  </h2>
+  <h2 style="color:yellow" *ngSwitchCase="'yellow'">
+    Yellow Color
+  </h2>
+  <h2 style="color:black" *ngSwitchCase="'black'">
+    Black Color
+  </h2>
+  <h2 style="color:gray" *ngSwitchDefault>
+    Gray Color
+  </h2>
+</div>
