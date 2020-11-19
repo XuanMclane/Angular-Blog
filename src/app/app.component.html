@@ -1,6 +1,6 @@
-<h1>Get TextBox Value</h1>
-<input type="text" (keyup)="getVal($event.target.value)" />
-<br /><br />
-<input type="text" #box />
-<button (click)="getVal(box.value)">Get Value</button>
-<h2>{{currentVal}}</h2>
+<h1>Property Binding</h1>
+<input type="text" [disabled]="disabledBox" [value]="name" />
+<br><br>
+<input type="text" disabled={{disabledBox}} value={{name}} />
+<br><br>
+<button (click)="enableBox()">Enable TextBox</button>
