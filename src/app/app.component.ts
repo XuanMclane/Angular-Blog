@@ -1,12 +1,6 @@
 import { UsersService } from './users.service';
 import { Component } from '@angular/core';
-
-interface person {
-  id: number,
-  title: string,
-  userId: number
-}
-
+import { person } from './interfaces'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
