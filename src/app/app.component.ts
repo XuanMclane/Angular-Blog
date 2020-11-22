@@ -23,6 +23,10 @@ export class AppComponent {
       age: 22,
       email: "peter@gmail.com"
     }
-  ]
-  
+  ];
+  name = "";
+  setName(val: string)
+  {
+    this.name = val;
+  }
 }

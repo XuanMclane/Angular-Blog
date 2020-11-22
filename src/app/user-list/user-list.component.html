@@ -2,3 +2,5 @@
 <p>{{person.name}}</p>
 <p>{{person.age}}</p>
 <p>{{person.email}}</p>
+<input #box type="text" />
+<button (click)="setData(box.value)">Pass value to parent</button>
