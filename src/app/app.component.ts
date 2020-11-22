@@ -15,4 +15,8 @@ export class AppComponent {
       this.data = data;
     });
   }
+  setName(val: string)
+  {
+    this.name = val;
+  }
 }

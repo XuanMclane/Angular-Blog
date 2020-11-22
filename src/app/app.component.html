@@ -1,6 +1,7 @@
 <app-header></app-header>
 <h1>Call api</h1>
+<div>{{name}}</div>
 <div *ngFor="let person of data">
-    <app-user-list [person]="person"></app-user-list>
+    <app-user-list [person]="person" (setName)="setName($event)"></app-user-list>
 </div>
 <app-footer></app-footer>
