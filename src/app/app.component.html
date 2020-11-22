@@ -1,7 +1,27 @@
 <app-header></app-header>
-<h1>Call api</h1>
+<h1>Routing page</h1>
 <div>{{name}}</div>
-<div *ngFor="let person of data">
-    <app-user-list [person]="person" (setName)="setName($event)"></app-user-list>
-</div>
+<h1>User Routing</h1>
+<ul>
+    <li>
+        <a routerLink="users/login">Login</a>
+    </li>
+    <li>
+        <a routerLink="users/signup">Signup</a>
+    </li>
+    <li>
+        <a routerLink="users/list">List</a>
+    </li>
+</ul>
+<h1>Admin Routing</h1>
+<ul>
+    <li>
+        <a routerLink="admin/login">Admin Login</a>
+    </li>
+    <li>
+        <a routerLink="admin/list">Admin List</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
 <app-footer></app-footer>
