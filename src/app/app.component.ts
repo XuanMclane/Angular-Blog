@@ -28,5 +28,9 @@ export class AppComponent {
   setName(val: string)
   {
     this.name = val;
-  }
+  };
+  testName = "Peter Parker";
+  today = Date.now();
+  testString = "Hello Angular";
+  money=10000
 }

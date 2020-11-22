@@ -1,7 +1,15 @@
 <app-header></app-header>
-<h1>Pass value from child to parent</h1>
-<div *ngFor="let data of users">
-    <app-user-list [person]="data" (setName)="setName($event)"></app-user-list>
-</div>
+<h1>Pipe</h1>
 <div>{{name}}</div>
+<div>{{testName | uppercase}}</div>
+<div>{{testName | titlecase}}</div>
+<div>{{testName | lowercase}}</div>
+<div>{{today | date}}</div>
+<div>{{today | date: 'fullDate'}}</div>
+<div>{{testString | slice:2}}</div>
+<div>{{testString | slice:2:6}}</div>
+<div>{{money | currency}}</div>
+<div>{{money | currency:'USD'}}</div>
+<div>{{money | currency:'CAD'}}</div>
+<div>{{money | currency:'RMB'}}</div>
 <app-footer></app-footer>
