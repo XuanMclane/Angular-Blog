@@ -1,15 +1,6 @@
 <app-header></app-header>
-<h1>Pipe</h1>
-<div>{{name}}</div>
-<div>{{testName | uppercase}}</div>
-<div>{{testName | titlecase}}</div>
-<div>{{testName | lowercase}}</div>
-<div>{{today | date}}</div>
-<div>{{today | date: 'fullDate'}}</div>
-<div>{{testString | slice:2}}</div>
-<div>{{testString | slice:2:6}}</div>
-<div>{{money | currency}}</div>
-<div>{{money | currency:'USD'}}</div>
-<div>{{money | currency:'CAD'}}</div>
-<div>{{money | currency:'RMB'}}</div>
+<h1>Call api</h1>
+<div *ngFor="let person of data">
+    <app-user-list [person]="person"></app-user-list>
+</div>
 <app-footer></app-footer>

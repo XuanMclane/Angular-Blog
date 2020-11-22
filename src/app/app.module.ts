@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatButtonModule } from '@angular/material/button'
 import { MatSliderModule } from '@angular/material/slider'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MatSliderModule } from '@angular/material/slider'
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
