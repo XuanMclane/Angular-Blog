@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { UsersModule } from './users/users.module'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
@@ -10,26 +9,25 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatButtonModule } from '@angular/material/button'
 import { MatSliderModule } from '@angular/material/slider'
-import { HttpClientModule } from '@angular/common/http'
-import { AdminModule } from './admin/admin.module'
+import { HttpClientModule } from '@angular/common/http';
+import { AdminListComponent } from './admin-list/admin-list.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AdminListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule,
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatSliderModule,
     HttpClientModule,
-    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

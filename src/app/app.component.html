@@ -1,5 +1,5 @@
 <app-header></app-header>
-<h1>Routing page</h1>
+<h1>Lazy Loading component</h1>
 <div>{{name}}</div>
 <h1>User Routing</h1>
 <ul>
@@ -22,6 +22,19 @@
         <a routerLink="admin/list">Admin List</a>
     </li>
 </ul>
-
 <router-outlet></router-outlet>
+
+<button (click)="loadAdmin()">Load Admin Component</button>
+<button (click)="loadUser()">Laod User Component</button>
+<br><br>
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    <input type="text" name="email"ngModel/>
+    <br><br>
+    <input type="password" name="password" ngModel/>
+    <br><br>
+    <button type="submit">Login</button>
+</form>
+
+
 <app-footer></app-footer>
