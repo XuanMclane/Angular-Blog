@@ -10,7 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatButtonModule } from '@angular/material/button'
 import { MatSliderModule } from '@angular/material/slider'
 import { HttpClientModule } from '@angular/common/http';
-import { AdminListComponent } from './admin-list/admin-list.component'
+import { AdminListComponent } from './admin-list/admin-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { AdminListComponent } from './admin-list/admin-list.component'
     MatButtonModule,
     MatSliderModule,
     HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,40 +1,20 @@
 <app-header></app-header>
-<h1>Lazy Loading component</h1>
-<div>{{name}}</div>
-<h1>User Routing</h1>
-<ul>
-    <li>
-        <a routerLink="users/login">Login</a>
-    </li>
-    <li>
-        <a routerLink="users/signup">Signup</a>
-    </li>
-    <li>
-        <a routerLink="users/list">List</a>
-    </li>
-</ul>
-<h1>Admin Routing</h1>
-<ul>
-    <li>
-        <a routerLink="admin/login">Admin Login</a>
-    </li>
-    <li>
-        <a routerLink="admin/list">Admin List</a>
-    </li>
-</ul>
-<router-outlet></router-outlet>
+<h1>Add Boostrap in Angular Form</h1>
 
-<button (click)="loadAdmin()">Load Admin Component</button>
-<button (click)="loadUser()">Laod User Component</button>
-<br><br>
-
-<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
-    <input type="text" name="email"ngModel/>
-    <br><br>
-    <input type="password" name="password" ngModel/>
-    <br><br>
-    <button type="submit">Login</button>
-</form>
+<div class="col-sm-6">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 
 
 <app-footer></app-footer>
